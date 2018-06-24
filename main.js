@@ -32,13 +32,15 @@ getList.appendChild(newItem);
 //turns green when clicked
 
 function turnGreen(){
-    console.log('green')
   if(newItem.classList.contains('checked')){
     newItem.classList.remove('checked')
     newItem.style.backgroundColor = 'white'
+    newItem.textContent = getFormValue 
+    
   } else {
     newItem.classList.add('checked')
     newItem.style.backgroundColor = 'green'
+    newItem.textContent = getFormValue +" Completed!";
   }
 } 
 newItem.addEventListener('click', turnGreen);
@@ -61,6 +63,7 @@ function removeItem(e){
 // //form submit event
 var form = document.getElementById('addForm');
 form.addEventListener('submit', addItem);
+
 
 
 

@@ -19,3 +19,9 @@ button{
     margin-left: 20px;
     padding-left: 100px;
 }
+
+.checked{
+    color: white;
+    font-weight: bolder;
+
+}
