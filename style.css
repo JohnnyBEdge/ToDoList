@@ -1,3 +1,21 @@
 li{
     text-decoration: none;
+    align-items: left;
+}
+
+.checked {
+    background-color: 'red';
+}
+
+
+/* .list-group-item:hover{
+    background: rgb(71, 202, 71);
+} */
+form{
+    justify-content: center;
+}
+
+button{
+    margin-left: 20px;
+    padding-left: 100px;
 }
