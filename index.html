@@ -11,8 +11,15 @@
 <body>
   <h1>Tasks:</h1>
 
-  <button id="showTasksBtn">Display Tasks</button>
-  <button>Toggle All</button>
+<div>
+  <button onclick="handlers.showTasks()">Display Tasks</button>
+  <button onclick="handlers.toggleAll()">Toggle All</button>
+</div>
+
+<div>
+  <input id = "addNewTask" type="text">
+  <button onclick="handlers.addTask()">Add</button>
+</div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="bootstrap.min.js"></script>

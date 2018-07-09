@@ -59,10 +59,16 @@ var taskList = {
         
     }
 }
-var showTasksBtn = document.getElementById('showTasksBtn');
-
-showTasksBtn.addEventListener('click', function(){
-    taskList.showTasks();
-})
-    
-
+var handlers = {
+    showTasks: function(){
+        taskList.showTasks();
+    },
+    toggleAll: function(){
+        taskList.toggleAll();
+    },
+    addTask: function(){
+        var addNewTask = document.getElementById('addNewTask');
+        taskList.addTask(addNewTask.value);
+        addNewTask.value= "";
+    }
+}
