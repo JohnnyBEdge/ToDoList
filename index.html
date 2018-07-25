@@ -12,7 +12,6 @@
   <h1>Tasks:</h1>
 
 <div>
-  <button onclick="handlers.showTasks()">Display Tasks</button>
   <button onclick="handlers.toggleAll()">Toggle All</button>
 </div>
 
@@ -20,6 +19,20 @@
   <input id = "addNewTask" type="text">
   <button onclick="handlers.addTask()">Add</button>
 </div>
+
+<div>
+  <button onclick="handlers.changeTask()">Edit Task</button>
+  <input type="number" id ="changeTaskLocation">
+  <input type="text" id="changeTaskText">
+</div>
+
+
+<div>
+    <button onclick="handlers.toggleCompleted()">Toggle</button>
+    <input type="number" id="toggleCompletedBtn">
+  </div>
+
+  <ul></ul>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="bootstrap.min.js"></script>
