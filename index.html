@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="bootstrap.min.css">
-    <title>To-Do List</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">    <title>To-Do List</title>
 </head>
 <body>
   <h1>Tasks:</h1>
@@ -15,22 +15,23 @@
   <button onclick="handlers.toggleAll()">Toggle All</button>
 </div>
 
-<div>
-  <input id = "addNewTask" type="text">
-  <button onclick="handlers.addTask()">Add</button>
+<div class="add">
+  <input id = "addNewTask" type="text" placeholder="Enter task...">
+  <button onclick="handlers.addTask()">+</button>
+  
 </div>
 
-<div>
+<!-- <div>
   <button onclick="handlers.changeTask()">Edit Task</button>
   <input type="number" id ="changeTaskLocation">
   <input type="text" id="changeTaskText">
-</div>
+</div> -->
 
 
-<div>
+<!-- <div>
     <button onclick="handlers.toggleCompleted()">Toggle</button>
     <input type="number" id="toggleCompletedBtn">
-  </div>
+  </div> -->
 
   <ul></ul>
 

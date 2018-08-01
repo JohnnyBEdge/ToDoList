@@ -1,7 +1,64 @@
+body{
+    font-family: 'Roboto Mono', monospace;
+}
+
+body h1{
+    text-align: center;
+    font-size: 3em;
+}
+
+.add {
+    text-align: center;
+    font-size: 20px;
+}
+
+.add input{
+    height: 75px;
+    width: 400px;
+    font-size: 40px;
+    border-radius: 0;
+    text-align: center;
+}
+.add button{
+    height: 75px;
+    width: 75px;
+    margin-left: 0;
+    border-radius: 0;
+    font-size: 40px;
+}
+
+body ul{
+    margin-top: 50px;
+}
+
 li{
     text-decoration: none;
     align-items: left;
+    border: solid black 1px;
+    margin-bottom: 5px;
+    width: 700px;
+    height: 50px;
+    text-align: left;
+    font-size: 20px;
+    list-style: none;
 }
+
+.deleteButton{
+    display: none;
+}
+
+button:hover{
+    display: block;
+    background-color: red;
+}
+
+/* .deleteButton:hover {
+    display: block;
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    float: right;
+} */
 
 .checked {
     background-color: 'red';
@@ -18,11 +75,6 @@ form{
 body button{
     margin-left: 20px;
     padding-left: 0;
-    border-radius: 8px;
-}
-
-input{
-    border-radius: 4px;
 }
 
 input:hover, button:hover {

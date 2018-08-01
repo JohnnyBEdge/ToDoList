@@ -93,7 +93,7 @@ var view = {
     },
     createDeleteBtn: function(){
         var deleteBtn = document.createElement('button');
-        deleteBtn.textContent = "Delete";
+        deleteBtn.textContent = "X";
         deleteBtn.className = "deleteButton";
         return deleteBtn
         
